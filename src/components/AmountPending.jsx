@@ -2,7 +2,7 @@
 export const AmountPending = function({title, amount, orderCount}) {
     return <div className="bg-white rounded-[8px] shadow-sm p-5 h-fit"> 
 
-        <div className="flex text-gray-700 pb-3">
+        <div className="flex text-[#4D4D4D] pb-3">
             {title}
             <div className="flex mt-1 pl-2">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">

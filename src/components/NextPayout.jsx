@@ -1,5 +1,4 @@
 
-
 export const NextPayout = ({title, amount, orderCount, secondTitle, date}) => {
     return <div className="bg-[#146eb4] hover:bg-[#0e4f82] rounded-[8px] shadow-sm pt-5"> 
     <div className="text-white pr-4 pl-4">
