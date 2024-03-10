@@ -1,12 +1,9 @@
 
-// export const RevenueCard = () => {
 
-// }
-
-export const RevenueCard = function({title, amount, orderCount}) {
-    return <div className="bg-white rounded shadow-sm p-5"> 
-
-        <div className="flex text-gray-700 pb-3">
+export const NextPayout = ({title, amount, orderCount, secondTitle, date}) => {
+    return <div className="bg-[#146eb4] hover:bg-[#0e4f82] rounded-[8px] shadow-sm pt-5"> 
+    <div className="text-white pr-4 pl-4">
+        <div className="flex pb-3">
             {title}
             <div className="flex mt-1 pl-2">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
@@ -15,21 +12,31 @@ export const RevenueCard = function({title, amount, orderCount}) {
             </div>
         </div>
 
-        <div className="flex justify-between">
-            <div className="font-medium text-3xl">
+        <div className="flex justify-between pb-5">
+            <div className="font-medium text-3xl ">
                 {amount}
             </div>
 
             {orderCount ? <div className="flex mt-1">
-                <div className="text-blue-500 font-medium underline">
+                <div className=" font-medium underline">
                 {orderCount} Orders
                 </div>
                 <div className="mt-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="#3b82f6" class="w-5 h-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="white" class="w-5 h-5">
                         <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                     </svg>
                 </div>
             </div> : null}
         </div>
     </div>
+    
+    <div className="flex justify-between bg-[#0e4f82] rounded-[8px] text-white pt-2 pb-2 pr-5 pl-5">
+        <div>
+            {secondTitle}
+        </div>
+        <div>
+            {date}
+        </div>
+    </div>
+</div>
 }
