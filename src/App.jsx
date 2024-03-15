@@ -2,14 +2,16 @@ import { useState } from 'react'
 import './App.css'
 import { AmountPending } from './components/AmountPending'
 import { AmountProcessed } from './components/AmountProcesses'
-// import { BackgroundPage } from './components/BackgroundPage'
 import { NextPayout } from './components/NextPayout'
+import { Orders } from './components/Orders'
+import { Sidebar } from './components/Sidebar'
 import { TopBar } from './components/TopBar'
 
 function App() {
 
   return ( 
     <div className="bg-zinc-50">
+      <Sidebar />
       <TopBar payoutTitle={"Payouts"} />
 
       <div className="flex justify-between px-8 py-8">
@@ -38,6 +40,8 @@ function App() {
         <button className='rounded-full px-4 py-[6px] bg-[#E6E6E6] text-[#808080]'>Payouts (22)</button>
         <button className='rounded-full px-4 py-[6px] bg-[#146EB4] text-white'>Refund (6)</button>
       </div>
+
+      <Orders />
 
     </div>
   )
